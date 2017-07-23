@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="BY">
 <head>
 	<meta charset="utf-8">
 	<title>Комната302</title>
@@ -7,48 +7,68 @@
 </head>
 <body>
 	<header>
-		<div class="logo">
-			<img src="#" alt="логатып 3/0/2">
+		<div class="header-1">
+			<div class="logo">
+				<img src="img/logo.png" alt="логатып 3/0/2" class="logo-header">
+			</div>
+			<nav class="tool-bar">
+				<ul>
+					<li><a href="#us">ХТО МЫ</a></li>
+					<li><a href="#meet">ПРАВЕСЦІ МЕРАПРЫЕМСТВА</a></li>
+					<li><a href="#donate">ДАПАМАГЧЫ КОМНАТА 3/0/2</a></li>
+					<li><a href="#contact">КАНТАКТЫ</a></li>
+				</ul>
+			</nav>
+		</div>		
+		<div class="header">
+			<h1>ПРАСТОРА 3/0/2</h1>
 		</div>
-		<nav>
-			<ul>
-				<li><a href="#us">ХТО МЫ</a></li>
-				<li><a href="#doing">ЧЫМ ЗАЙМАЕМСЯ</a></li>
-				<li><a href="#meet">ПРАВЕСЦІ МЕРАПРЫЕМСТВА</a></li>
-				<li><a href="#donate">ДАПАМАГЧЫ КОМНАТА 3/0/2</a></li>
-				<li><a href="#date">КАЛЯНДАР МЕРАПРЫЕМСТВАЎ</a></li>
-				<li><a href="#contact">ЯК ДАБРАЦЦА</a></li>
-				<li><a href="#sent">ПАДПІСАЦЦА НА РАСЫЛКУ</a></li>
-				<li><a href="#contact">КАНТАКТЫ</a></li>
-			</ul>
-		</nav>
 	</header>
 	<div id="us">
 		<h2>ХТО МЫ</h2>
 		<p>Комната 3/0/2 - платформа якая аб'ядноувае тры грамадскія арганізацыі: ГА "МАЦ "Фіальта", Цэнтр Развіцця студэнцкіх ініцыатываў і мінскую урабаністычную платформу. Гэта не толькі офіс, але і пляцоўка, адкрытая для сацыяльных ініцыатыў і мерапрыемстваў</p>
 	</div>
-	<div id="sent">
+	<div>
 		<div class="crsi">
-			<img src="#" alt="#">
-			<input type="#" name="#">
+			<img src="#" alt="Цэнтр Развіцця студэнцкіх ініцыатыў" class="img-sent">
+			<form class="sent">
+				<a href="https://vk.com/zbsunion"><img src="#"></a>
+				<a href="https://www.facebook.com/zbsunion/"><img src="#"></a>
+				<label for="crsi">падпісацца на рассылку</label><br>
+				<input type="text" name="email" id="crsi">
+				<input type="submit" class="btn" value="падпісацца">
+			</form>
 		</div>
 		<div class="fialta">
-			<img src="#" alt="#">
-			<input type="#" name="#">
+			<img src="text" alt="Фіяльта" class="img-sent">
+			<form class="sent">
+				<a href="https://vk.com/youthcenterfialta"><img src="img/vk.png"></a>
+				<a href="https://www.facebook.com/youthcenterfialta/"><img src="img/facebook.png"></a>
+				<label for="fialta">падпісацца на рассылку</label><br>
+				<input type="text" name="email" id="fialta">
+				<input type="submit" class="btn" value="падпісацца">
+			</form>
 		</div>
 		<div class="urban">	
-			<img src="#" alt="#">
-			<input type="#" name="#">
+			<img src="img/urban_platform.png" alt="мінская урбаністычная платформа" class="img-sent-3" width="200" height="200">
+			<form class="sent">
+				<a href="https://vk.com/club66598247"><img src="#"></a>
+				<a href="https://www.facebook.com/minskurban/"><img src="#"></a>
+				<label for="urban">падпісацца на рассылку</label><br>
+				<input type="text" name="email" id="urban">
+				<input type="submit" class="btn" value="падпісацца">
+			</form>
+			
 		</div>	
 	</div>
-	<div id="doing">
+	<div>
 		<h2>ЧЫМ МЫ ЗАЙМАЕМСЯ</h2>
 		<ul>
 			<li>Праводзім адукацыйныя праграмы і мерапрыемствы</li>
 			<li>Прадстаўляе пляцоўку і рэсурсы для рэалізацыі адукацыйных і грамядзянскіх ініцыатыў</li>
-		</ul><
+		</ul>
 		<div class="img_doing">
-		<img src="#" alt="#">
+		<img src="#" alt="логотип 2">
 		</div>
 		<ul>
 			<li>Аказваем кансультатыўную і ментарскую дапамогу</li>
@@ -59,10 +79,14 @@
 		<h2>Правесьці мерапрыемства</h2>
 		<p>Мы можам дапамагчы вам арганізаваць мерапрыемства ў Комнаце або падтрымаць вашу ініцыатыву, калі яны бесплатныя, не з'яўляюцца піар-акцыямі камерцыйнай дзейнасці і адпавядаюць прынцыпам ня-дыскрымінацыі і даступнасці.</p>
 		<div>
-			<input type="" name="">
-			<input type="" name="">
-			<input type="" name="">
-			<input type="" name="">
+			<h3> Напішыце нам аб ідэе мерапрыемства!</h3>
+			<form class="meet">
+				<input type="text" name="fullname"><br>
+				<input type="text" name="contact"><br>
+				<textarea type="text" name="message" id="message">
+                </textarea><br>
+				<input type="submit" class="btn-2" value="Атпрвіць!">
+			</form> 
 		</div>	
 	</div>
 	<div id="donate">
@@ -70,30 +94,48 @@
 		<ol>
 			<li>Вы можаце дапамагчы Комнаце стаўшы валанцерам або валанцеркай (раз на месяц мы наводзім парадак усе разам) ці выказаць або рэалізаваць сваю ініцыатыву па паляпшэнню працы Комнаты</li>
 			<li>Комната 3/0/2 - некамерцыйны праект, таму мы будзем рады фінансавай падтрымцы</li>
-			<input type="" name="">
+			<form class="donate-action" action="#" method="post">
+				<input type="text" name="fullname"><br>
+				<input type="text" name="contact"><br>
+				<textarea type="text" name="help" id="help"></textarea> <br>
+				<input type="submit" class="btn-2" value="ХАЧУ ДАПАМАГЧЫ!">
+			</form>
 		</ol>
 	</div>
-	<div id="date">
-		<h2>Каляндар мерапрыемстваў</h2>
-		<div></div>
-	</div>
+	
 	<div id="contact">
 		<h2>Кантакты</h2>
-		<div>
-			<ul>
+		<div >
+			<ul class="contact">
 				<li>Адрэс: вуліца Леніна, 50, 3-ці паверх, к 302</li>
 				<li>E-MAIL: prapanova302@gmail.com</li>
 			</ul>
-			<iframe src="#">Як да нас дабрацца</iframe>
-		</div>
-		<div>
-			<ul>
+			<ul class="social">
 				<li><a href="">Facebook</a></li>
 				<li><a href="">vk</a></li>
 				<li><a href="">instagram</a></li>
 			</ul>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.3727461938047!2d27.574636215576827!3d53.8895784800965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfcdf60cdfed%3A0xf25c4b6db3d10d06!2z0YPQu9C40YbQsCDQm9C10L3QuNC90LAgNTAsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1498839664762" class="maps" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 	</div>
-	<footer></footer>
+	<div>
+		<iframe src="//vk.com/video_ext.php?oid=8786535&id=456239099&hash=17fde71a8520df62&hd=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<footer>
+		<nav class="tool-bar-footer">
+			<ul>
+				<li><a href="#us">ХТО МЫ</a></li>
+				<li><a href="#meet">ПРАВЕСЦІ МЕРАПРЫЕМСТВА</a></li>
+				<li><a href="#donate">ДАПАМАГЧЫ КОМНАТА 3/0/2</a></li>
+				<li><a href="#contact">КАНТАКТЫ</a></li>
+			</ul>
+		</nav>
+		<ul class="social-footer">
+			<li><a href="#"><img src="img/facebook.png"></a></li>
+			<li><a href=""><img src="img/vk.png"></a></li>
+			<li><a href=""><img src="img/instagram.png"></a></li>
+		</ul>
+
+	</footer>
 </body>
 </html>
