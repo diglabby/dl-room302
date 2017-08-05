@@ -1,0 +1,64 @@
+.our-work {
+  h2 {
+    padding-top: 140px;
+    padding-bottom: 120px;
+  }  
+}
+
+.work-list {
+  max-width: 1170px;
+  position: relative;
+  width: 100%;
+  padding:0;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 155px;
+
+  @include tablet-lg {
+    .offset-lg-2 {
+      padding: 0px 0px 30px 45px;
+      &:before {
+        top: 3px;
+        left: 25px;
+      }
+    }
+  }
+
+  li {
+      display: block;
+      position: relative;
+      padding: 0px 20px 30px 20px;
+      line-height: 20px;
+      font-family: $text-font;
+      color:  $text-color;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: left;
+
+      &:before {
+        content: url($img-path + 'list-style-item.png');
+        width: 14px;
+        height: 16px;
+        position: absolute;
+        top: 3px;
+        left: 0px;
+      }
+  }
+
+  &:before {
+    @include tablet-sm {
+      content: url($img-path + 'cubes.png');
+      right: 10px;
+      position: absolute;
+      top: 0;
+    }
+    @include tablet-lg {
+      content: url($img-path + 'cubes.png');
+      position: absolute;
+      top: -50px;
+      left: 0;
+      right: 0;
+    }
+  }
+}
