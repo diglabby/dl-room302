@@ -1,0 +1,95 @@
+.contacts {
+  background-color: $brand-primary;
+  padding-bottom: 20px;
+
+  @include md {
+      padding-bottom: 40px;
+  }
+  @include lg {
+      padding-bottom: 148px;
+  }
+
+  .row {
+    .row {
+      margin: 0;
+    }
+  }
+
+  h2 {
+    color: $body-bg;
+    @include lg {
+        padding: 140px 0 70px 0;
+    }
+  }
+
+  .address {
+    justify-content: center;
+
+    @include md {
+        justify-content: space-between;
+    }
+  }
+
+  p {
+    color: $body-bg;
+    font-weight: bold;
+    position: relative;
+    padding-left: 25px;
+    line-height: 20px;
+    font-size: 18px;
+    padding-bottom: 10px;
+
+    @include md {
+        font-size: 22px;
+    }
+
+    &:before {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      font-size: 20px;
+    }
+  }
+
+  .social {
+    text-align: center;
+    justify-content: space-around;
+
+    @include md {
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+
+    a {
+      display: inline-block;
+      border: 2px solid #ffffff;
+      width: 70px;
+      height: 41px;
+      color: #ffffff;
+      font-size: 26px;
+      line-height: 43px;
+      margin: 0 12px;
+      &:hover {
+        color: rgba(255, 255, 255, 0.75);
+        border: 2px solid rgba(255, 255, 255, 0.75);
+      }
+
+      @include md {
+          width: 41px;
+      }
+      @include lg {
+          width: 59px;
+          height: 59px;
+          line-height: 66px;
+          font-size: 40px;
+      }
+    }
+  }
+
+  
+  .embed-responsive {
+    @include lg {
+        height: 327px;
+    }
+  }
+}

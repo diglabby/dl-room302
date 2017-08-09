@@ -1,0 +1,106 @@
+.about-us {
+  padding: 0 5px;
+
+  @include md {
+      padding: 0 0px 20px 0px;
+  }
+
+  h2 {
+    @include lg {
+        padding: 130px 0px 70px 0px;
+    }
+  }
+
+   div > p {
+    @include lg {
+        padding-bottom: 65px;
+        margin-bottom: 0;
+    }
+  }
+
+  .subscribe-form {
+    margin: 0 auto;
+    @include md {
+        width: auto;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      height: 40px;
+
+      @include md {
+          width: 231px;
+          margin-bottom: 0;
+      }
+    }
+
+    .subscribe {
+      height: 40px;
+      width: 100%;
+
+      @include md {
+          width: 135px;
+      }
+    }
+  }
+
+  .socials {
+    text-align: center;
+    padding-bottom: 18px;
+    margin-top: auto;
+
+    a {
+      display: inline-block;
+      border: 2px solid #000000;
+      color: #000000;
+      max-width: 200px;
+      width: 48%;
+      height: 40px;
+      margin: 0;
+      font-size: 28px;
+      line-height: 42px;
+
+      @include md {
+        width: 33px;
+        height: 33px;
+        font-size: 24px;
+        line-height: 36px;
+        margin: 0 12px;
+      }
+
+      &:hover {
+        color: #119a9f;
+        border: 2px solid #119a9f;
+        opacity: 0.75;
+      }
+    }
+  }
+
+  .image-wrapper {
+    height:  150px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @include md {
+        height: 205px;
+    }   
+
+    img {
+       margin: 0 auto;
+       display: block;
+       height: 100%;
+       width: auto;
+       padding-top: 20px;
+       padding-bottom: 10px;
+    }
+  }
+
+  .platform-item {
+    @include md {
+        padding: 0;
+    }
+     p {
+       text-align: center;
+     }
+   }
+}

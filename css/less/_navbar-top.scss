@@ -1,0 +1,98 @@
+.navbar {
+  padding: 0 5px;
+  max-width: 1920px;
+  margin: auto;
+  background-image: none;
+  background-color: #212121;
+  @include md {
+    position: static;
+  }
+}
+
+.navbar-brand {
+  .logo {
+    width: auto;
+
+    @include xs {
+      max-height: 54px;
+    }
+    @include md {
+      max-height: 108px;
+    }
+  }
+}
+
+.navbar-collapse {
+    padding: 0;
+    flex-basis: 0;
+    flex-grow: 1000;
+
+    li {
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #111;
+
+      @include md {
+        border: none;
+      }
+      a {
+          padding: 5px;
+      }
+    }
+
+    .nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      &:before, &:after{
+          content: none !important;
+      }
+    }
+  }
+
+.grow {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+
+.navbar-inverse .navbar-nav .nav-link {
+  color: #f6f5f5;
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 22px;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+
+  &:before {
+    content:url($img-path + "nav-item-icon.png");
+    position: relative;
+    margin-right: 10px;
+    padding-left: 20px;
+    top:7px;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+
+  .navbar-collapse{
+    padding: 0;
+    flex-basis: initial;
+    flex-grow: 1000;
+  }
+
+    .grow {
+      flex-grow: 1;
+      flex-basis: initial;
+    }
+
+    .navbar-nav .nav-link {
+      &:before {
+        content:none;
+      }
+    }
+  }
+}
