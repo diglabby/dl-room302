@@ -1,81 +1,167 @@
-body {
-
-}
-header, footer, #meet{
-	background: #242424;
-}
-#contact {
-	background: #008af0;
-}
-
-$font-path: "../../fonts/";
 $img-path: "../../img/";
-$main-color: #ffffff;
-$second-color: #119a9f;
-$text-color: #000000;
 
-$caption-font: "PT Sans Caption", Aerial;
-$text-font: "Arimo", sans-serif;
-
-$mobile-sm-width: 481px;
-$tablet-sm-width: 800px;
-$tablet-lg-width: 992px;
-$desktop-mid-width: 1024px;
-$desktop-large-width: 1200px;
-
-@mixin tablet-sm{
-  @media (min-width: #{$tablet-sm-width}) {
+@mixin xs {
+  @include media-breakpoint-up(xs) {
     @content;
   }
 }
 
-@mixin tablet-lg{
-  @media (min-width: #{$tablet-lg-width}) {
+@mixin sm {
+  @include media-breakpoint-up(sm) {
     @content;
   }
 }
 
-@mixin desktop-lg {
-  @media (min-width: #{$desktop-large-width}) {
+@mixin md {
+  @include media-breakpoint-up(md) {
     @content;
   }
 }
-@mixin mobile-sm {
-  @media (min-width: #{$mobile-sm-width}) {
+
+@mixin md-down {
+  @include media-breakpoint-down(md) {
     @content;
+  }
+}
+
+@mixin lg {
+  @include media-breakpoint-up(lg) {
+    @content;
+  }
+}
+@mixin xl {
+  @include media-breakpoint-up(xl) {
+    @content;
+  }
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  padding: 75px 0 20px 0;
+  font-size: 30px;
+
+  @include md {
+      padding: 120px 0 70px 0;
+      font-size: 42px;
+  }
+}
+
+h3 {
+  color: $brand-primary;
+  padding-bottom: 20px;
+}
+
+p {
+  font-family: $font-family-serif;
+  line-height: 18px;
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 5px;
+
+  @include sm {
+      line-height: 24px;
+      font-size: 18px;
+      margin-bottom: 16px;
   }
 }
 
 body {
-  background-color: $main-color;
-  font-family: $text-font;
-  font-style: normal;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: left;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  max-width: 1920px;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  @include md {
+      overflow-x: hidden;
+  }
 }
 
-h2, h3 {
-  text-align: center;
-  padding-bottom: 50px;
-  font-family: $caption-font;
-  color:  $text-color;
-  font-size: 42px;
-  font-weight: 700;
+ul, ol {
+  padding-left: 0;
+  list-style: none;
 }
-p {
+
+.row {
   margin: 0;
-  font-size: 18px;
+  @include xl {
+      margin: 0 -25px;
+  }
+}
+.error {
+  outline: red auto 5px !important;
+  color: red !important;
+  border: 1px solid red !important;
 }
 
+label.error {
+  display: none !important;
+  margin: 0;
+  font-size: 0;
+}
 
-.container {
-  @include desktop-lg {
-    width: 1170px;
-    max-width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
+button:focus {
+  outline: 5px auto $brand-primary;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:  #f5f5f5;
+  color: #393939;
+
+  @include md {
+      width: 440px;
+      height: 53px;
+      margin-bottom: 20px;
+  }
+
+  &:focus {
+    outline: $brand-primary auto 5px;
+  }
+
+  &[placeholder] {
+    color:  #7d7b7b;
+    line-height: 20px;
+    font-family: $font-family-sans-serif;
+    font-size: 16px;
+    padding: 10px 25px;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+}
+
+.container  textarea {
+  height: auto;
+
+  @include md {
+    width: 440px;
+    height: 121px;
+    margin-bottom: 20px;
+  }
+}
+
+.form-control {
+  max-width: 440px;
+}
+
+.nav-link {
+  color: #f6f5f5;
+}
+
+.btn {
+  height: 53px;
+  font-weight: 700;
+  font-family: $font-family-serif;
+  color: #f7f7f7;
+  font-size: 16px;
+  cursor: pointer;
+
+  @include md {
+      width: 250px;
   }
 }

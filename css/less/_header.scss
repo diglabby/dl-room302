@@ -1,0 +1,13 @@
+.header {
+  background: url($img-path + "header.png") center center no-repeat;
+  height: 100vh;
+  max-height: 662px;
+
+  h1 {
+    color: #f9f9f9;
+  }
+
+  @include md {
+    height: 662px;
+  }
+}

@@ -1,0 +1,71 @@
+.help-us {
+  padding-bottom: 40px;
+
+  @include lg {
+      padding-bottom: 160px;
+  }
+
+  h2 {
+    @include lg {
+        padding-top: 150px;
+        padding-bottom: 85px;
+    }
+  }
+
+  p {
+    color:  #1b1b1b;
+    position: relative;
+    padding: 0 0 20px 60px;
+
+    @include lg {
+        line-height: 24px;
+        padding-bottom: 70px;
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: -10px;
+
+      @include lg {
+          left: 25px;
+      }
+    }
+
+    &:nth-child(1) {
+      padding: 0 0 40px 60px;   
+
+      @include md {
+          padding: 0 0 20px 60px;
+      }
+      @include lg {
+          padding: 0 0 60px 120px;
+      }
+
+      &:before {
+        content: url($img-path + "1-small.png");
+        @include lg {
+            content: url($img-path + "1.png");
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      padding: 0 0 40px 60px;
+
+      @include md {
+          padding: 0 0 20px 60px;
+      }
+      @include lg {
+          padding: 0 0 60px 120px;
+      }
+
+      &:before {
+        content: url($img-path + "2-small.png");
+        @include lg {
+            content: url($img-path + "2.png");
+        }
+      }
+    }
+  }
+}
