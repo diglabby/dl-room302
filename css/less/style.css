@@ -4719,7 +4719,7 @@ ul, ol {
       margin: 0 -25px; } }
 
 .error {
-  outline: red auto 5px !important;
+  outline: red auto 1px !important;
   color: red !important;
   border: 1px solid red !important; }
 
@@ -4729,9 +4729,9 @@ label.error {
   font-size: 0; }
 
 button:focus {
-  outline: 5px auto #119a9f; }
+  outline: #119a9f auto 1px; }
 
-input[type="text"], textarea {
+input[type="text"].form-control, textarea.form-control {
   width: 100%;
   height: 40px;
   margin-left: auto;
@@ -4739,18 +4739,18 @@ input[type="text"], textarea {
   background-color: #f5f5f5;
   color: #393939; }
   @media (min-width: 768px) {
-    input[type="text"], textarea {
+    input[type="text"].form-control, textarea.form-control {
       width: 440px;
       height: 53px;
       margin-bottom: 20px; } }
-  input[type="text"]:focus, textarea:focus {
-    outline: #119a9f auto 5px; }
-  input[type="text"][placeholder], textarea[placeholder] {
+  input[type="text"].form-control:focus, textarea.form-control:focus {
+    outline: #119a9f auto 1px; }
+  input[type="text"].form-control[placeholder], textarea.form-control[placeholder] {
     color: #7d7b7b;
     line-height: 20px;
     font-family: "PT Sans Caption", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;
-    padding: 10px 25px;
+    padding: 10px 25px 14px 25px;
     text-overflow: ellipsis;
     vertical-align: middle; }
 
@@ -4779,15 +4779,57 @@ input[type="text"], textarea {
     .btn {
       width: 250px; } }
 
+.modal {
+  display: none; }
+  .modal .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); }
+  .modal .modal-content {
+    height: 300px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.75);
+    position: fixed;
+    top: calc(50% - 150px);
+    left: calc(50% - 250px);
+    text-align: center; }
+    .modal .modal-content span {
+      float: right;
+      cursor: pointer;
+      font-size: 60px;
+      line-height: 0.5;
+      color: #000000; }
+    .modal .modal-content p {
+      cursor: pointer;
+      text-align: center;
+      margin: 82px auto;
+      font-size: 30px;
+      line-height: 35px;
+      color: #119a9f; }
+
+.show-modal {
+  display: none; }
+  @media (min-width: 1170px) {
+    .show-modal {
+      display: block; } }
+
 .navbar {
   padding: 0 5px;
   max-width: 1920px;
   margin: auto;
   background-image: none;
-  background-color: #212121; }
-  @media (min-width: 768px) {
-    .navbar {
-      position: static; } }
+  background-color: #212121;
+  transition: opacity 1s ease;
+  opacity: 1;
+  transition: all 0.5s ease; }
+  .navbar:hover {
+    opacity: 1; }
+
+.scrolled {
+  opacity: 0.8; }
 
 .navbar-brand .logo {
   width: auto;
@@ -4849,8 +4891,13 @@ input[type="text"], textarea {
 
 .header {
   background: url("../../img/header.png") center center no-repeat;
-  height: 100vh;
-  max-height: 662px; }
+  max-height: 662px;
+  margin-top: 62px;
+  height: calc(100vh - 62px); }
+  @media (min-width: 768px) {
+    .header {
+      margin-top: 116px;
+      height: calc(100vh - 116px); } }
   .header h1 {
     color: #f9f9f9; }
   @media (min-width: 768px) {
@@ -5074,18 +5121,19 @@ input[type="text"], textarea {
     @media (min-width: 768px) {
       .contacts .address {
         justify-content: space-between; } }
-  .contacts p {
+  .contacts a.icon-mail, .contacts p {
     color: #ffffff;
     font-weight: bold;
     position: relative;
     padding-left: 25px;
     line-height: 20px;
     font-size: 18px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    text-decoration: none; }
     @media (min-width: 768px) {
-      .contacts p {
+      .contacts a.icon-mail, .contacts p {
         font-size: 22px; } }
-    .contacts p:before {
+    .contacts a.icon-mail:before, .contacts p:before {
       position: absolute;
       top: 2px;
       left: 0;
