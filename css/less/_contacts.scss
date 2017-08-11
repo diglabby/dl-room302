@@ -30,7 +30,7 @@
     }
   }
 
-  p {
+   a.icon-mail, p {
     color: $body-bg;
     font-weight: bold;
     position: relative;
@@ -38,6 +38,7 @@
     line-height: 20px;
     font-size: 18px;
     padding-bottom: 10px;
+    text-decoration: none;
 
     @include md {
         font-size: 22px;
@@ -86,7 +87,7 @@
     }
   }
 
-  
+
   .embed-responsive {
     @include lg {
         height: 327px;

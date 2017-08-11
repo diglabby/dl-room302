@@ -1,7 +1,15 @@
 .header {
   background: url($img-path + "header.png") center center no-repeat;
-  height: 100vh;
+
   max-height: 662px;
+  @include xs {
+    margin-top: 62px;
+    height: calc(100vh - 62px);
+  }
+  @include md {
+    margin-top: 116px;
+    height: calc(100vh - 116px);
+  }
 
   h1 {
     color: #f9f9f9;

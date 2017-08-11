@@ -4,10 +4,19 @@
   margin: auto;
   background-image: none;
   background-color: #212121;
-  @include md {
-    position: static;
+  transition: opacity 1s ease;
+  opacity: 1;
+  transition: all 0.5s ease;
+  &:hover {
+    opacity: 1;
   }
 }
+
+
+.scrolled {
+  opacity: 0.8;
+}
+
 
 .navbar-brand {
   .logo {
