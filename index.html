@@ -256,10 +256,10 @@
 				</nav>
 			</div>
 		</footer>
-        <div id="modal-box" class="modal" >
-            <div class="overlay" onclick="document.getElementById('modal-box').className += 'show-modal'"></div>
+        <div id="modal-box" class="modal " >
+            <div class="overlay" onclick="$('#modal-box').removeClass('show-modal')"></div>
             <div class="modal-content">
-              <span onclick="document.getElementById('modal-box').className += 'show-modal'">&times;</span>
+              <span  onclick="$('#modal-box').removeClass('show-modal')">&times;</span>
               <p id="modal-message"></p>
             </div>
         </div>

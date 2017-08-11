@@ -27,11 +27,11 @@ $(function () {
             data: $(this).serialize(),
             success: function () {
                 document.getElementById("modal-message").innerHTML="Дзякуй за ваша паведамленне!";
-                $('#modal-box').show();
+                $('#modal-box').addClass('show-modal');
             },
             error: function () {
                 document.getElementById("modal-message").innerHTML="Памылка пры адпраўцы данных. Калі ласка, праверце данные і паспрабуйце яшчэ раз.";
-                $('#modal-box').show();
+                $('#modal-box').addClass('show-modal');
             }
         });
     });
