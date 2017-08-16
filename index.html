@@ -7,6 +7,12 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<title>Комната 302</title>
 		<link rel="stylesheet" type="text/css" href="css/less/style.css">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+        <meta name="keywords" content="Фиальта, Фiальта, Фіяльта, Fialta, NGO 'Youth education centre 'Fialta'
+            ЗБС, Задзіночанне Беларускіх Студэнтаў, ЦРСІ, ЦРСИ
+            МУП, Минская Урбанистическая Платформа, Мінская Ўрбаністычная Платформа, Мінская Урбаністычная Платформа
+            Комната 302, Комната 3/0/2, Komnata 302, Komnata 3/0/2, Ленина 50">
+        <meta name="description" content="Komnata 3/0/2">
 	</head>
 
 	<body>
@@ -59,7 +65,8 @@
 									<a class="icon-vk-logo" href="https://www.facebook.com/youthcenterfialta/" target="_blank"></a>
 								</div>
 								<p><b>Падпісацца на расылку</b></p>
-								<form name="subscribe-form" class="subscribe-form form-inline justify-content-center" action="#">
+								<form name="subscribe-form" class="subscribe-form form-inline justify-content-center" method="POST" action="subscribe.php">
+                  <input type="hidden" name="organization" value="fialta">
 									<input type="text" placeholder="E-mail" class="form-control" name="email">
 									<button class="btn btn-primary subscribe form-control" type="submit" name="platform-submit">Падпісацца</button>
 								</form>
@@ -74,7 +81,8 @@
 									<a class="icon-vk-logo" href="https://www.facebook.com/zbsunion/" target="_blank"></a>
 								</div>
 								<p><b>Падпісацца на расылку</b></p>
-								<form name="subscribe-form" class="subscribe-form form-inline justify-content-center" action="#">
+								<form name="subscribe-form" class="subscribe-form form-inline justify-content-center" method="POST" action="subscribe.php">
+                  <input type="hidden" name="organization" value="bsu">
 									<input type="text" placeholder="E-mail" class="form-control" name="email">
 									<button class="btn btn-primary subscribe form-control" type="submit" name="platform-submit">Падпісацца</button>
 								</form>
@@ -89,7 +97,8 @@
 									<a class="icon-vk-logo" href="https://www.facebook.com/minskurban/" target="_blank"></a>
 								</div>
 								<p><b>Падпісацца на расылку</b></p>
-								<form name="subscribe-form" class="subscribe-form form-inline justify-content-center" action="#">
+								<form name="subscribe-form" class="subscribe-form form-inline justify-content-center" method="POST" action="subscribe.php">
+                  <input type="hidden" name="organization" value="urban">
 									<input type="text" placeholder="E-mail" class="form-control" name="email">
 									<button class="btn btn-primary subscribe form-control" type="submit" name="platform-submit">Падпісацца</button>
 								</form>
@@ -129,7 +138,7 @@
 						піар-мерапрыемствамі камерцыйнай дейнасці і адпавядаюць прынцыпам ня-дыскрымінацыі і даступнасці.</p>
 					<div class="col-lg-12 offset-xl-1 col-xl-10">
 						<p class="form-head text-center"><strong>НАПІШЫЦЕ НАМ АБ ІДЭЕ МЕРАПРЫЕМСТВА!</strong></p>
-							<form name="events-form" class="offset-lg-3 col-lg-6 text-center form-send" method="POST">
+							<form name="events-form" class="offset-lg-3 col-lg-6 text-center form-send-event" method="POST">
 								<input type="hidden" name="subject" value="Мерапрыемства">
 								<input type="text" placeholder="Імя" class="form-control" name="name" required>
 								<input type="text" placeholder="Кантактная інфармацыя" class="form-control" name="email" required>
@@ -157,7 +166,7 @@
 								мы будзем рады фінансавай падтрымцы.
 							</p>
 						</div>
-						<form name="help-us-form" class="offset-lg-3 col-lg-6 text-center form-send" method="POST">
+						<form name="help-us-form" class="offset-lg-3 col-lg-6 text-center form-send-help" method="POST">
 							<input type="hidden" name="subject" value="Дапамога">
 							<input type="text" placeholder="Імя" class="form-control" name="name">
 							<input type="text" placeholder="Кантактная інфармацыя" class="form-control" name="email">
@@ -255,12 +264,15 @@
 					</ul>
 				</nav>
 			</div>
+      <p class="copyright">Пакой 302 - 2017<br>
+      Ліцэнзіі: <a href="https://opensource.org/licenses/MIT">код MIT</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">Кантэнт: CC BY-SA 4.0</a>, Распрацоўка: <a href="https://it.falanster.by/">Лічбавая майстэрня</a></p>
 		</footer>
         <div id="modal-box" class="modal " >
             <div class="overlay" onclick="$('#modal-box').removeClass('show-modal')"></div>
             <div class="modal-content">
               <span  onclick="$('#modal-box').removeClass('show-modal')">&times;</span>
               <p id="modal-message"></p>
+              <a onclick="$('#modal-box').removeClass('show-modal')" id="modal-link"></a>
             </div>
         </div>
 		<!---include js -->

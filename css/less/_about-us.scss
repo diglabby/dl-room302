@@ -1,15 +1,10 @@
 .about-us {
-  padding: 0 5px;
+    padding: 0 5px;
 
-  @include md {
-      padding: 0 0px 20px 0px;
-  }
-
-  h2 {
-    @include lg {
-        padding: 130px 0px 70px 0px;
+    @include md {
+        padding: 0 0px 20px 0px;
     }
-  }
+
 
    div > p {
     @include lg {
@@ -83,7 +78,7 @@
 
     @include md {
         height: 205px;
-    }   
+    }
 
     img {
        margin: 0 auto;

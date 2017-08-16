@@ -2,14 +2,7 @@
   padding-bottom: 40px;
 
   @include lg {
-      padding-bottom: 160px;
-  }
-
-  h2 {
-    @include lg {
-        padding-top: 150px;
-        padding-bottom: 85px;
-    }
+      padding-bottom: 150px;
   }
 
   p {
@@ -33,7 +26,7 @@
     }
 
     &:nth-child(1) {
-      padding: 0 0 40px 60px;   
+      padding: 0 0 40px 60px;
 
       @include md {
           padding: 0 0 20px 60px;

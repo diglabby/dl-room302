@@ -4680,7 +4680,7 @@ h2 {
   font-size: 30px; }
   @media (min-width: 768px) {
     h2 {
-      padding: 120px 0 70px 0;
+      padding: 150px 0 80px 0;
       font-size: 42px; } }
 
 h3 {
@@ -4750,7 +4750,7 @@ input[type="text"].form-control, textarea.form-control {
     line-height: 20px;
     font-family: "PT Sans Caption", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;
-    padding: 10px 25px 14px 25px;
+    padding: 12px 25px 14px 25px;
     text-overflow: ellipsis;
     vertical-align: middle; }
 
@@ -4789,9 +4789,9 @@ input[type="text"].form-control, textarea.form-control {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); }
   .modal .modal-content {
-    height: 300px;
-    width: 500px;
-    background: rgba(255, 255, 255, 0.75);
+    height: 400px;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.85);
     position: fixed;
     top: calc(50% - 150px);
     left: calc(50% - 250px);
@@ -4805,10 +4805,16 @@ input[type="text"].form-control, textarea.form-control {
     .modal .modal-content p {
       cursor: pointer;
       text-align: center;
-      margin: 82px auto;
-      font-size: 30px;
-      line-height: 35px;
+      margin: 90px auto;
+      font-size: 46px;
+      font-weight: bold;
+      line-height: 46px;
       color: #119a9f; }
+    .modal .modal-content a {
+      color: #000000;
+      text-decoration: underline;
+      font-size: 24px;
+      cursor: pointer; }
 
 .show-modal {
   display: none; }
@@ -4910,9 +4916,6 @@ input[type="text"].form-control, textarea.form-control {
     .about-us {
       padding: 0 0px 20px 0px; } }
   @media (min-width: 1170px) {
-    .about-us h2 {
-      padding: 130px 0px 70px 0px; } }
-  @media (min-width: 1170px) {
     .about-us div > p {
       padding-bottom: 65px;
       margin-bottom: 0; } }
@@ -4989,7 +4992,7 @@ input[type="text"].form-control, textarea.form-control {
       padding: 0 0px 110px 0px; } }
   @media (min-width: 1170px) {
     .our-work h2 {
-      padding: 120px 0 105px 0; } }
+      padding: 130px 0 105px 0; } }
   .our-work .work-list {
     position: relative; }
     .our-work .work-list:before {
@@ -5023,16 +5026,13 @@ input[type="text"].form-control, textarea.form-control {
           left: 15px; } }
 
 .events {
-  background: url("../../img/events-bg.png") center center no-repeat;
+  background: url("../../img/events-bg.png") bottom center no-repeat;
   padding-bottom: 40px; }
   @media (min-width: 1170px) {
     .events {
       padding-bottom: 150px; } }
   .events h2 {
     color: #222222; }
-    @media (min-width: 1170px) {
-      .events h2 {
-        padding: 150px 0 75px 0; } }
   .events p {
     color: #1c1c1c;
     padding-top: 10px;
@@ -5047,17 +5047,13 @@ input[type="text"].form-control, textarea.form-control {
     font-size: 16px; }
     @media (min-width: 1170px) {
       .events .form-head {
-        padding: 45px 0 35px 0; } }
+        padding: 70px 0 35px 0; } }
 
 .help-us {
   padding-bottom: 40px; }
   @media (min-width: 1170px) {
     .help-us {
-      padding-bottom: 160px; } }
-  @media (min-width: 1170px) {
-    .help-us h2 {
-      padding-top: 150px;
-      padding-bottom: 85px; } }
+      padding-bottom: 150px; } }
   .help-us p {
     color: #1b1b1b;
     position: relative;
@@ -5108,14 +5104,11 @@ input[type="text"].form-control, textarea.form-control {
       padding-bottom: 40px; } }
   @media (min-width: 1170px) {
     .contacts {
-      padding-bottom: 148px; } }
+      padding-bottom: 150px; } }
   .contacts .row .row {
     margin: 0; }
   .contacts h2 {
     color: #ffffff; }
-    @media (min-width: 1170px) {
-      .contacts h2 {
-        padding: 140px 0 70px 0; } }
   .contacts .address {
     justify-content: center; }
     @media (min-width: 768px) {
@@ -5178,12 +5171,12 @@ input[type="text"].form-control, textarea.form-control {
       padding-bottom: 100px; } }
   @media (min-width: 1170px) {
     .video {
-      padding-bottom: 140px; } }
+      padding-bottom: 150px; } }
   .video h2 {
     color: #1b1b1b; }
     @media (min-width: 1170px) {
       .video h2 {
-        padding: 140px 0 70px 0; } }
+        padding: 150px 0 80px 0; } }
   .video p {
     color: #171717;
     font-weight: 700;

@@ -45,7 +45,7 @@ h2 {
   font-size: 30px;
 
   @include md {
-      padding: 120px 0 70px 0;
+      padding: 150px 0 80px 0;
       font-size: 42px;
   }
 }
@@ -130,7 +130,7 @@ input[type="text"].form-control, textarea.form-control {
     line-height: 20px;
     font-family: $font-family-sans-serif;
     font-size: 16px;
-    padding: 10px 25px 14px 25px;
+    padding: 12px 25px 14px 25px;
     text-overflow: ellipsis;
     vertical-align: middle;
   }
@@ -178,9 +178,9 @@ input[type="text"].form-control, textarea.form-control {
         background: rgba(0, 0, 0, 0.5);
      }
      .modal-content {
-        height: 300px;
-        width: 500px;
-        background: rgba(255,255, 255, 0.75);
+        height: 400px;
+        width: 600px;
+        background: rgba(255,255, 255, 0.85);
         position: fixed;
         top: calc(50% - 150px);
         left: calc(50% - 250px);
@@ -195,10 +195,17 @@ input[type="text"].form-control, textarea.form-control {
         p {
             cursor: pointer;
             text-align: center;
-            margin: 82px auto;
-            font-size: 30px;
-            line-height: 35px;
+            margin: 90px auto;
+            font-size: 46px;
+            font-weight: bold;
+            line-height: 46px;
             color: #119a9f;
+        }
+        a {
+          color: #000000;
+          text-decoration: underline;
+          font-size: 24px;
+          cursor: pointer;
         }
     }
 }
