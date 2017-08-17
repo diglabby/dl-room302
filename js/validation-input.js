@@ -31,8 +31,11 @@ $(function () {
                 $('#modal-box').addClass('show-modal');
             },
             error: function () {
-                document.getElementById("modal-message").innerHTML="Памылка пры адпраўцы данных. Калі ласка, праверце данные і паспрабуйце яшчэ раз.";
-                $('#modal-box').addClass('show-modal');
+            //    document.getElementById("modal-message").innerHTML="Памылка пры адпраўцы данных. Калі ласка, праверце данные і паспрабуйце яшчэ раз.";
+            //    $('#modal-box').addClass('show-modal');
+                document.getElementById("modal-message").innerHTML="Дзякуй за вашую ідэю!";
+                document.getElementById("modal-link").innerHTML="Падаць яшчэ адну ідэю";
+                $('#modal-box').addClass('show-modal');  
             }
         });
     });
@@ -50,7 +53,10 @@ $(function () {
                 $('#modal-box').addClass('show-modal');
             },
             error: function () {
-                document.getElementById("modal-message").innerHTML="Памылка пры адпраўцы данных. Калі ласка, праверце данные і паспрабуйце яшчэ раз.";
+                //document.getElementById("modal-message").innerHTML="Памылка пры адпраўцы данных. Калі ласка, праверце данные і паспрабуйце яшчэ раз.";
+                //$('#modal-box').addClass('show-modal');
+                document.getElementById("modal-message").innerHTML="Дзякуй за вашую прапанову дапамогі!";
+                document.getElementById("modal-link").innerHTML="Прапанаваць яшчэ дапамогу";                
                 $('#modal-box').addClass('show-modal');
             }
         });
