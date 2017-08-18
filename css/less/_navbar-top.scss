@@ -70,8 +70,8 @@
   font-family: "PT Sans Caption", sans-serif;
   font-size: 22px;
   position: relative;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 33px;
+  padding-right: 10px;
 
   &:before {
     content:url($img-path + "nav-item-icon.png");

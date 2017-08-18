@@ -16,12 +16,14 @@
   }
 
   h2 {
-    color: $body-bg;    
+    color: $body-bg;
   }
 
   .address {
     justify-content: center;
-
+    ul {
+      margin-bottom: 30px;
+    }
     @include md {
         justify-content: space-between;
     }
@@ -66,7 +68,7 @@
       color: #ffffff;
       font-size: 26px;
       line-height: 43px;
-      margin: 0 12px;
+      margin: 0 24px 0 0;
       &:hover {
         color: rgba(255, 255, 255, 0.75);
         border: 2px solid rgba(255, 255, 255, 0.75);
