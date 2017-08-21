@@ -1,7 +1,7 @@
 .header {
-  background: url($img-path + "header.png") center center no-repeat;
-
+  background: url($img-path + "header.jpg") center center no-repeat;
   max-height: 662px;
+  
   @include xs {
     margin-top: 62px;
     height: calc(100vh - 62px);

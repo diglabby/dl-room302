@@ -6,13 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0" >
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<title>Комната 302</title>
-		<link rel="stylesheet" type="text/css" href="css/less/style.css">
         <link rel="shortcut icon" href="img/favicon.png" type="image/png">
         <meta name="keywords" content="Фиальта, Фiальта, Фіяльта, Fialta, NGO 'Youth education centre 'Fialta'
             ЗБС, Задзіночанне Беларускіх Студэнтаў, ЦРСІ, ЦРСИ
             МУП, Минская Урбанистическая Платформа, Мінская Ўрбаністычная Платформа, Мінская Урбаністычная Платформа
             Комната 302, Комната 3/0/2, Komnata 302, Komnata 3/0/2, Ленина 50">
         <meta name="description" content="Komnata 3/0/2">
+
 	</head>
 
 	<body>
@@ -57,7 +57,7 @@
 						<ul class="platforms-table row list-unstyled">
 							<li class="col-md-4 platform-item d-flex flex-column justify-content-center">
 								<div class="image-wrapper">
-									<img src="img/logo-about-1.png" class="img-fluid" alt="ФІЯЛЬТА"></img>
+									<img src="img/logo-about-1.png" class="img-fluid" alt="ФІЯЛЬТА">
 								</div>
 								<h3>ФІЯЛЬТА</h3>
 								<div class="socials">
@@ -65,7 +65,7 @@
 									<a class="icon-vk-logo" href="https://www.facebook.com/youthcenterfialta/" target="_blank"></a>
 								</div>
 								<p><b>Падпісацца на расылку</b></p>
-								<form name="subscribe-form" class="subscribe-form form-inline justify-content-center" method="POST" action="subscribe.php">
+								<form name="subscribe-form" class="subscribe-form form-inline justify-content-center" method="POST">
                   <input type="hidden" name="organization" value="fialta">
 									<input type="text" placeholder="E-mail" class="form-control" name="email">
 									<button class="btn btn-primary subscribe form-control" type="submit" name="platform-submit">Падпісацца</button>
@@ -81,7 +81,7 @@
 									<a class="icon-vk-logo" href="https://www.facebook.com/zbsunion/" target="_blank"></a>
 								</div>
 								<p><b>Падпісацца на расылку</b></p>
-								<form name="subscribe-form" class="subscribe-form form-inline justify-content-center" method="POST" action="subscribe.php">
+								<form name="subscribe-form" class="subscribe-form form-inline justify-content-center" method="POST">
                   <input type="hidden" name="organization" value="bsu">
 									<input type="text" placeholder="E-mail" class="form-control" name="email">
 									<button class="btn btn-primary subscribe form-control" type="submit" name="platform-submit">Падпісацца</button>
@@ -97,7 +97,7 @@
 									<a class="icon-vk-logo" href="https://www.facebook.com/minskurban/" target="_blank"></a>
 								</div>
 								<p><b>Падпісацца на расылку</b></p>
-								<form name="subscribe-form" class="subscribe-form form-inline justify-content-center" method="POST" action="subscribe.php">
+								<form name="subscribe-form" class="subscribe-form form-inline justify-content-center" method="POST">
                   <input type="hidden" name="organization" value="urban">
 									<input type="text" placeholder="E-mail" class="form-control" name="email">
 									<button class="btn btn-primary subscribe form-control" type="submit" name="platform-submit">Падпісацца</button>
@@ -168,8 +168,8 @@
 						</div>
 						<form name="help-us-form" class="offset-lg-3 col-lg-6 text-center form-send-help" method="POST">
 							<input type="hidden" name="subject" value="Дапамога">
-							<input type="text" placeholder="Імя" class="form-control" name="name">
-							<input type="text" placeholder="Кантактная інфармацыя" class="form-control" name="email">
+							<input type="text" placeholder="Імя" class="form-control" name="name" required>
+							<input type="text" placeholder="Кантактная інфармацыя" class="form-control" name="email" required>
 							<textarea cols="40" rows="5" placeholder="Чым я магу дапамагчы" class="form-control" name="message" required></textarea>
 							<button class="btn btn-primary send form-control" type="submit" name="help-us-send">ХАЧУ ДАПАМАГЧЫ!</button>
 						</form>
@@ -207,7 +207,7 @@
 									</ul>
 							</div>
 							<div class="col-lg-6 offset-xl-1 col-xl-5 embed-responsive embed-responsive-16by9">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.3727461938047!2d27.574636215576827!3d53.8895784800965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfcdf60cdfed%3A0xf25c4b6db3d10d06!2z0YPQu9C40YbQsCDQm9C10L3QuNC90LAgNTAsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1498839664762" class="maps" width="584" height="327" style="border:0" allowfullscreen></iframe>
+								 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.3727461938047!2d27.574636215576827!3d53.8895784800965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfcdf60cdfed%3A0xf25c4b6db3d10d06!2z0YPQu9C40YbQsCDQm9C10L3QuNC90LAgNTAsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1498839664762" class="maps" width="584" height="327" style="border:0" allowfullscreen></iframe>
 							</div>
 						</div>
 					</div>
@@ -221,7 +221,11 @@
 				<div class="row">
 					<div class="offset-lg-1 col-lg-10  offset-xl-2 col-xl-8">
 						<div class="frame embed-responsive embed-responsive-16by9">
-							<iframe src="//vk.com/video_ext.php?oid=8786535&id=456239099&hash=17fde71a8520df62&hd=1" width="898" height="546" allowfullscreen></iframe>
+                      <!--<iframe src="//vk.com/video_ext.php?oid=8786535&id=456239099&hash=17fde71a8520df62&hd=1" width="898" height="546" allowfullscreen></iframe>-->
+                      <video class="embed-responsive embed-responsive-16by9" width="898" height="546" controls>
+                       <source src="video/302.mp4" type="video/mp4">                      
+                      Your browser does not support the video tag.
+                      </video>
 						</div>
 						<p>
 							Будынак толькі здадзены ў эксплуатацыю, таму на мапах яго пакуль няма.
@@ -276,9 +280,11 @@
             </div>
         </div>
 		<!---include js -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.validate.min.js"></script>
-		<script src="js/validation-input.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/less/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/validation-input.js"></script>
     </body>
 </html>

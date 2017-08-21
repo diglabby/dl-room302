@@ -1,14 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=cyrillic-ext');
-@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&subset=cyrillic-ext');
-
 $font-path: "../../fonts/";
+
+@font-face {
+    font-family: 'Arimo';
+    src: local('Arimo'), url($font-path + 'arimo/arimo.woff2') format('woff2'), url($font-path + 'arimo/arimo.woff') format('woff'), url($font-path + 'arimo/arimo.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: local('Arimo Bold'), local('Arimo-Bold'), url($font-path + 'arimo/arimobold.woff2') format('woff2'), url($font-path + 'arimo/arimobold.woff') format('woff'), url($font-path + 'arimo/arimobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: local('PT Sans Caption'), local('PTSans-Caption'), url($font-path + 'ptsanscaption/ptsanscaption.woff2') format('woff2'), url($font-path + 'ptsanscaption/ptsanscaption.woff') format('woff'), url($font-path + 'ptsanscaption/ptsanscaption.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: local('PT Sans Caption Bold'), local('PTSans-CaptionBold'), url($font-path + 'ptsanscaption/ptsanscaptionbold.woff2') format('woff2'), url($font-path + 'ptsanscaption/ptsanscaptionbold.woff') format('woff'), url($font-path + 'ptsanscaption/ptsanscaptionbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 @font-face {
     font-family: 'Glyphter';
-    src: url($font-path + 'Glyphter.eot');
-    src: url($font-path + 'Glyphter.eot?#iefix') format('embedded-opentype'),
-         url($font-path + 'Glyphter.woff') format('woff'),
-         url($font-path + 'Glyphter.ttf') format('truetype'),
-         url($font-path + 'Glyphter.svg#Glyphter') format('svg');
+
+    src: local('Glyphter'),
+      url($font-path + 'Glyphter.eot'),
+      url($font-path + 'Glyphter.eot?#iefix') format('embedded-opentype'),
+      url($font-path + 'Glyphter.woff') format('woff'),
+      url($font-path + 'Glyphter.ttf') format('truetype'),
+      url($font-path + 'Glyphter.svg#Glyphter') format('svg');
     font-weight: normal;
     font-style: normal;
 }

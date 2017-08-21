@@ -1,4 +1,5 @@
 <?php
+  error_reporting(0);
   if(isset($_POST['organization'])) {
 
         if($_POST['organization'] === 'fialta')    {
@@ -10,12 +11,14 @@
             $email_subject = "Комната 302. Падпіска";
             $contacts = $_POST['email']; // required
             $email_message .= "Кантактная інфармацыя: ".$contacts."\n  <br><br>";
-            $headers = "MIME-Version: 1.0\r\n"."Content-type: text/html; charset=utf-8\r\n"."From: <room302.by>\r\n";
+            $headers = "MIME-Version: 1.0\r\n"."Content-type: text/html; charset=utf-8\r\n". "From: <webmaster@komnata302.by>";
             @mail($email_to, $email_subject, $email_message, $headers);
-            header("Location: http://zbsunion.by/join");
+           
+            print "Дзякуй! Мы будзем радыя дасылаць вам нашыя навіны.<br> <a href='https://groups.google.com/forum/#!forum/catch-the-present/join/' target='_blank'>Далучайся! - catch-the-present@googlegroups.com.</a>";
+           
             die();
           }
-          header("Location: https://groups.google.com/forum/#!forum/catch-the-present/join/");
+         
           die();
 
         }
@@ -28,9 +31,10 @@
               $email_subject = "Комната 302. Падпіска";
               $contacts = $_POST['email']; // required
               $email_message .= "Кантактная інфармацыя: ".$contacts."\n  <br><br>";
-              $headers = "MIME-Version: 1.0\r\n"."Content-type: text/html; charset=utf-8\r\n"."From: <room302.by>\r\n";
+              $headers = "MIME-Version: 1.0\r\n"."Content-type: text/html; charset=utf-8\r\n". "From: <webmaster@komnata302.by>";
               @mail($email_to, $email_subject, $email_message, $headers);
-              header("Location: http://zbsunion.by/join");
+            
+              print ("Дзякуй! Мы будзем радыя дасылаць вам нашыя навіны.<br> <a href='http://zbsunion.by/join' target='_blank'>Далучайся! - zbsunion.by</a>");              
               die();
             }
         }
@@ -44,8 +48,9 @@
             $email_subject = "Комната 302. Падпіска";
             $contacts = $_POST['email']; // required
             $email_message .= "Кантактная інфармацыя: ".$contacts."\n  <br><br>";
-            $headers = "MIME-Version: 1.0\r\n"."Content-type: text/html; charset=utf-8\r\n"."From: <room302.by>\r\n";
-            @mail($email_to, $email_subject, $email_message, $headers);
+            $headers = "MIME-Version: 1.0\r\n"."Content-type: text/html; charset=utf-8\r\n". "From: <webmaster@komnata302.by>";
+            @mail($email_to, $email_subject, $email_message, $headers);             
+            print "Дзякуй! Мы будзем радыя дасылаць вам нашыя навіны.<br><a href='mailto:minskurban@gmail.com' target='_blank'>minskurban@gmail.com</a>";
             die();
           }
 

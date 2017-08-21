@@ -5,7 +5,7 @@
       return str_replace($bad,"",$string);    
     }
     
-  //  $email_to = "cthulhu.wan100@yandex.ru";
+    //$email_to = "cthulhu.wan100@yandex.ru";
     $email_to = "prapanova302@gmail.com";
     $email_subject = "Комната 302. ".clean_string($_POST['subject']);
  
@@ -39,7 +39,7 @@
     $email_message .= "Тэкст прапановы: ".clean_string($message)."\n  <br><br>";  
  
 
-    $headers = "MIME-Version: 1.0\r\n"."Content-type: text/html; charset=utf-8\r\n"."From: <room302.by>\r\n";
+    $headers = "MIME-Version: 1.0\r\n"."Content-type: text/html; charset=utf-8\r\n". "From: <webmaster@komnata302.by>";
     @mail($email_to, $email_subject, $email_message, $headers);  
-    
+    }    
 ?>

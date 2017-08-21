@@ -27,19 +27,22 @@ footer {
     padding-top: 20px;
 
     a {
+
       display: inline-block;
       border: 2px solid #ffffff;
-      width: 41px;
+      width: 40px;
       font-family: Glyphter;
-      height: 41px;
+      height: 40px;
       color: #ffffff;
       font-size: 26px;
       line-height: 36px;
+
       margin: 0 12px;
 
       &:hover {
         color: rgba(255, 255, 255, 0.75);
         border: 2px solid rgba(255, 255, 255, 0.75);
+
       }
     }
   }
