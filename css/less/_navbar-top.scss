@@ -53,6 +53,11 @@
       display: flex;
       justify-content: space-between;
 
+      @media (min-width: 1170px) and (max-width: 1353px)
+      {
+            padding: 0 40px;  
+      }
+
       &:before, &:after{
           content: none !important;
       }

@@ -14,7 +14,7 @@
             $headers = "MIME-Version: 1.0\r\n"."Content-type: text/html; charset=utf-8\r\n". "From: <webmaster@komnata302.by>";
             @mail($email_to, $email_subject, $email_message, $headers);
            
-            print "Дзякуй! Мы будзем радыя дасылаць вам нашыя навіны.<br> <a href='https://groups.google.com/forum/#!forum/catch-the-present/join/' target='_blank'>Далучайся! - catch-the-present@googlegroups.com.</a>";
+            print "Дзякуй! Мы будзем радыя дасылаць вам нашыя навіны.<br> <a href='https://groups.google.com/forum/#!forum/catch-the-present/join/' target='_blank'>Далучайся! - <br>catch-the-present@googlegroups.com.</a>";
            
             die();
           }
