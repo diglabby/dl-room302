@@ -90,6 +90,7 @@
   .embed-responsive {
     @include lg {
         height: 327px;
+        margin-top: -13px;
     }
   }
 }
