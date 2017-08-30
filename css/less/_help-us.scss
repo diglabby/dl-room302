@@ -1,5 +1,6 @@
 .help-us {
   padding-bottom: 40px;
+  background: url($img-path + "video-bg.png") center bottom no-repeat;
 
   @include lg {
       padding-bottom: 150px;
